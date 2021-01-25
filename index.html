@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chattanooga Mayoral Election 2021 - Voter's Guide by Issue</title>
+<script src="https://kit.fontawesome.com/aeb3b0fcce.js" crossorigin="anonymous"></script>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+<a class="skip-link" href='#header'>Skip to content</a>
+<ul class="navbar">
+  <li class="navbar-list-item"><a href="mayor_project.html">Voter's Guide by Issue</a></li>
+  <li class="navbar-list-item"><a href="definitions_of_mayor.html">What can the Mayor do?</a></li>
+
+</ul>
+
+<div class="center">
+	<h1 id="header"> Chattanooga Mayoral Election 2021 - Voter's Guide by Issue</h1>
+
+	<div id="buttons">
+		<button id="public_safety" onclick="add_topic(public_safety_policies, 'Public Safety')"><img src="firefighter.svg" height="60"/><br> Police and Public Safety</button>
+		<button id="early_childhood_education" onclick="add_topic(early_childhood_education_policies, 'Early Childhood Education')"><img src="children.svg" height="60"/><br> Early Childhood Education</button>
+		<button id="housing" onclick="add_topic(housing_policies, 'Housing')"><img src="neighborhood.svg" height="60"/></i><br> Housing and Homelessness</button>
+		<button id="outdoor_recreation" onclick="add_topic(outdoor_recreation_policies, 'Outdoor Recreation')"><img src="hiking.svg" height="60"/><br> Access to Outdoor Recreation</button>
+		<button id="youth_and_family_development" onclick="add_topic(youth_and_family_development_policies, 'Youth and Family Development')"><img src="grandmother-and-grandson.svg" height="60"/><br> Youth & Family Development</button>
+		<button id="strengthen_neighborhoods" onclick="add_topic(neighborhood_policies, 'Strengthen Neighborhoods')"><img src="network.svg" height="60"/><br> Strengthen Neighborhoods</button>
+		<button id="economic_recovery" onclick="add_topic(economic_recovery_policies, 'Economic Recovery')"><i class="fas fa-briefcase"></i><br> Economic Recovery and Development</button>
+		<button id="inclusive_city" onclick="add_topic(inclusive_city_policies, 'Inclusive City')"><img src="workplace.svg" height="60"/><br> Inclusive City and Economy</button>
+		<button id="public_transportation" onclick="add_topic(public_transportation_policies, 'Public Transportation')"><i class="fas fa-bus-alt"></i><br> Public Transportation</button>
+		<button id="parking,_paving,_and_potholes" onclick="add_topic(streets_policies, 'Parking, Paving, and Potholes')"><i class="fas fa-car"></i><br> Parking, Paving, and Potholes</button>
+		<button id="environmental_sustainability" onclick="add_topic(sustainability_policies, 'Environmental Sustainability')"><img src="sustainable.svg" height="60"/><br> Environmental Sustainability</button>
+		<button id="city_employee_wages" onclick="add_topic(salary_policies, 'City Employee Wages')"><img src="salary.svg" height="60"/><br> City Employee Wages</button>
+		<button id="effective_government" onclick="add_topic(effective_government_policies, 'Effective Government')"><img src="idea.svg" height="60"/><br> Effective Government</button>
+		<button id="collaborative_government" onclick="add_topic(collaborative_government_policies, 'Collaborative Government')"><img src="conversation.svg" height="60"/><br> Collaborative Government</button>
+		<button id="transparent_government" onclick="add_topic(transparent_government_policies, 'Transparent Government')"><img src="talking.svg" height="60"/><br> Transparent Government</button>
+	</div>
+
+	<div id="main">
+
+	</div>
+</div>
+
+<div id="footer">
+
+<p> Icon used for city employee wages made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>. All other icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+</div>
+
+<script>
+let candidates = ["Dr. Elenora Woods", "Robert C. Wilson", "Kim White", "Erskine Oglesby", "Andrew McClaren", "George Ryan Love", "Tim Kelly", "Wade Hinton", "Russell Gilbert", "D'Angelo Davis", "Chris Long", "Christopher Dahl",  "Lon Cartwright", "Monty Bell", "Monty Bruell"];
+
+// javascript object 
+let early_childhood_education_policies = {"D'Angelo Davis": "<ul> <li>The City of Chattanooga government will partner will local providers, the state of Tennessee, nonprofits, and faith-based organizations to create a network of childcare options that would be available to every family. These options would include locally licensed childcare centers, preschool centers, and in-home childcare options. The City of Chattanooga would ensure that providers are held to both State and Local standards to make sure that no matter where you live, your child will have access to quality care and early learning. The state government will pick up a high chunk of the cost of operating these new high-quality options to allow local providers to provide access for free to any family that makes less than 20% of the federal poverty line. That means free coverage for thousands of children in Chattanooga. </li> </ul>", "Wade Hinton": "<ul> <li>Develop an early childhood voucher program to assist working families in accessing high-quality early learning programs for children under five.</li> </ul>", "Kim White": "<ul> <li>Along with setting a high priority to create a strong partnership with County and school leaders to see where the City can best serve our public school system, the City’s Office of Early Learning will work alongside the Early Matters Coalition, a collection of 40 local organizations leading the way in early childhood education, to significantly increase the number of seats in quality Pre-K and childcare facilities because access and availability of childcare and early learning opportunities is an issue across income levels in our city. In discussions with our local business community, we will advocate for businesses to work alongside working parents to offer childcare options and flexible schedules to keep qualified employees in the workforce. And, the City will lead by example in this regard.</li> </ul>"};
+let housing_policies = {"Chris Dahl": "<ul><li>Panic peddling is the illegal practice of inducing people in a neighborhood to sell their homes, by making them believe that members of a minority group are likely to buy property in and around their residential area. The city aides in this by allowing the 'we buy houses' signs being placed in the community and using code enforcement to harass residents.</li></ul>", "D'Angelo Davis": "<ul> <li>My housing plan takes the first step by creating a first of its kind down-payment Rent-to-own assistance program. The people eligible for assistance must be first time homebuyers who live in a formerly redlined neighborhood or community that was segerated by law and are still currently low-income. If they qualify, they are entitled to a substantial grant they can put towards a down payment on a home in a once gentrified or segerated area of Chattanooga. The program will provide thousands of families with a real chance to buy a home. For the rent to own option. This option will be tailored to people who do not meet the credit criteria, or income requirement necessary for first-time homebuyers. These individuals will have a rent agreement for two to three years once completed with no debt added to the family income the mortgage payment would then be entrusted to the individual. </li> <li> Our housing plan will help, by investing $30 million over four years to build, preserve, and rehab affordable housing, creating a multitude of new housing units and bringing down rental costs by 10%. It would also help families, especially families of color, buy homes, and start to build wealth. Substantially improving housing affordability isn't just good for the economy and working families, it will also reduce homelessness and crime. </li> </ul>", "Tim Kelly": "<p>There is no single solution to homelessness — instead, it involves an integrated approach designed to break the cycle of homelessness. Our framework consists of practical solutions, including immediate assistance and tools for long-term success. Because every Chattanoogan deserves a home. Our commitment to providing effective solutions for homelessness is centered around five core principles:</p> <ul><li> TAKE A PROACTIVE APPROACH to reducing the homeless population in Chattanooga.</li> <li> PROVIDE SUPPORTING MEASURES to those who are on the cusp of homelessness.</li> <li>INCREASE the affordable housing supply.</li> <li> BE ETHICAL and inclusive in our values and approach. </li> <li> EMPOWER AND STRENGTHEN the individual to end the cycle of homelessness. </li> </ul> <p>MORE at https://www.kellyforcha.com/blog/homeless-to-housed-a-framework</p>", "Chris Long": "<ul> <li> My administration will partner with private enterprise to create the necessary affordable housing for our community. We will create tax incentives for an already overtaxed building sector to provide the affordable housing we desperately need. </li> <li> Currently, by misusing the Federal Consent Decree, the city has overtaxed developers only to take those fees and hide their creative spending in projects dubbed along with projects labeled as necessary to comply with the decree. The result is a beautiful downtown district redeveloped off the backs of her citizens, and a debt that our grandchildren will be struggling to pay off.</li> <li> In order to get a hold of our housing crisis, my administration will first get in line with the consent decree and its proper management of compliance. </li> <li> We will then also pull city building fees and permits back in line, freeing up affordability to the end user home buyers. My administration will create affordable housing to everyone, enabling all our citizens to pursue their version of the American Dream. </li> </ul>", "Wade Hinton": "<ul> <li> Partner with developers and community organizations to create an additional 2,000 affordable housing units and an affordable housing unit tracker, while leveraging smarter housing policies and resources like our Land Bank, housing trust, and a new Housing Commission to ensure more investment in affordable housing over the long-term. </li> </ul>", "Kim White": "<ul><li>With a dedicated housing staff, we will focus on increasing home ownership through better utilizing federal programs, leveraging local nonprofit partners working in this space, and working with local banks to establish a loan pool with support services for first time homeowners. For rental housing, we will create a $2 million dollar affordable housing rental gap fund in my first year with the intention to fund this every year with the goal of creating 700 quality units in my first term. The City currently has 450 back tax properties that we have an opportunity to leverage to increase affordable housing options along with reviewing our current rules and regulations to allow for more affordable housing types to be constructed like accessory dwellings.</li> </ul>"};
+let public_safety_policies = {"Wade Hinton": "<ul><li> Work with residents, community groups, and our police department, to create a unified approach to public safety by creating a city-wide and neighborhood public safety strategy</li> <li> Prioritize the role social services and other interventions play in public safety to ensure our law enforcement officers do not carry an unfair burden and provide the services Chattanoogans truly need.</li> <li>  Engage community members and expand the impact of the police oversight committee that ensures transparency and builds trust.</li> <li> Communicate ongoing performance data to the public about the status of crime, arrests, department workload, and safety of our officers. </li> <li> Along with other City personnel, evaluate firefighter, police, and emergency services pay to guarantee the City remains competitive for retaining and recruiting high performing talent. </li> <li> Commit to addressing the root causes of crime, ranging from a lack of economic opportunity or to access to mental health services. </li> <li> Work with community stakeholders to create a re-entry strategy to assist individuals released after paying their debt to society.</li></ul>", "Chris Long": "<ul><li>To borrow another candidate’s words, fighting crime is not a social experiment. We don’t need to hire 100 more police officers. We do not need any new ideas on how to handle an old problem. The solution for our city is simple. Enforcement. We cannot tie the hands of law enforcement in this city with even more procedures or rules of engagement. We need to enforce. I will have the back of the police officers of this city. They will have the proper equipment to do their jobs to increase their chances of returning home at night. They will even have batteries for their Tasers that work.</li></ul>", "Kim White": "<ul><li>Public safety is a primary job of any government, and I am committed to the support of our fire and police departments with the resources they need and strong public support. From the beginning of my administration, I will be committed to competitive compensation, additional support services like mental health and addiction treatment specialists to work alongside law enforcement, and to identify and to correct barriers for greater recruitment of minority officers. Regular communication is key, and as Mayor, I will meet regularly with neighborhood leaders and fire and police employee groups to review existing measures, consider new opportunities, and how together, we create a safe Chattanooga for all.</li></ul>", "Erskine Oglesby": "<ul><li> Establish neighborhood watch programs</li> <li> Increase diversity in both Police and Fire Departments</li></ul>" };
+let outdoor_recreation_policies = {"Tim Kelly": "<p> Chattanooga’s natural assets are at the core of our brand, and outdoor recreation opportunities set us apart from other cities. The Mayor’s commitment to promoting and protecting the region’s natural beauty and abundant outdoor activities must be unwavering to ensure that residents and visitors alike can enjoy this great asset in perpetuity. Access to the outdoors benefits not just our tourism economy, but more importantly serves as the main driver to promote health, wellness, and quality of life of all Chattanoogans.</p> <p> Our commitment to Chattanooga’s outdoor recreational ecosystem must include more access for people of color and low-income Chattanoogans. We must account for the barriers that exist for community members and visitors in exploring our region’s greatest assets and craft a strategy to connect all residents to these resources.</p> <p> Projects undertaken and supported by the City of Chattanooga will strive to meet the following criteria:</p><ul><li>ENCOURAGE INCLUSIVITY and equitable access to the outdoors.</li> <li> PROMOTE KNOWLEDGE of how to explore the outdoors safely.</li> <li> IMPROVE THE USAGE of outdoor assets among locals and visitors.</li> <li> PROTECT outdoor assets.</li> <li> COORDINATE efforts of public, private, and nonprofit organizations.</li></ul><p>MORE at <a target='_blank' href='https://www.kellyforcha.com/blog/outdoor-vision-2021'>kellyforcha.com/blog/outdoor-vision-2021</a></p>", "Kim White": "<ul><li>As the outdoors are a major identifier and economic driver for our city, my foremost priority in this regard is to re-establish the City’s Parks and Recreation Department to develop and maintain excellent facilities and places for public recreation, sports, and community building; provide dynamic recreation programs and services that promote health and well-being for all; promote and educate environmental sustainability; and ensure the parks, natural areas, public places, and urban forest of the city are accessible to all. Additionally, the creation of a Parks Foundation is a critical next step to strategically invest in our limited and valuable public space that will enable us to raise private dollars, give us flexibility with park programming, and allow for more neighborhood focused park projects. </li></ul>"};
+let youth_and_family_development_policies = {"Erskine Oglesby": "<ul><li> Develop and support programs that focus on birth though kindergarten learning skills</li> <li> Increase access to youth sports</li> <li> Increase Youth Summer Job Participation</li> <li> Increase program aimed at Family Empowerment Initiatives</li></ul>", "Wade Hinton": "<ul><li>Embrace the City’s role in the education of our children, by fully partnering with Hamilton County Schools to provide transportation, after school and summer learning opportunities, and support for student success plans to meet the needs of all students.</li> <li> Invest in youth and family centers as essential community hubs that go beyond recreation, with greater access to job training and critical city services.</li> <li> Ensure the City leads by example and engages other employers in supporting family-friendly workplace policies such as paid parental leave.</li></ul>", "Christopher Dahl": "<ul><li>Turn the Rec centers into multimedia centers that offer more after school programs. Also have a small police precincts added to them to allow funding to be invested from the police department into the community. </li></ul>"};
+let neighborhood_policies = {"Wade Hinton": "<ul><li> Engage residents, neighborhood associations, business owners, developers and community organizations to identify critical neighborhood projects and investments that increase quality of life and access to opportunities </li> <li> Improve efficient transit access between neighborhoods and critical employment, educational, and commercial centers. </li> <li> Leverage City resources to help grow small, locally-owned businesses in neighborhoods. </li> <li> Commit to creating a vibrant Downtown that is welcoming to tourists and to all Chattanoogans. Revitalize and activate public spaces and address the growing issue of building vacancies in our urban core.</li></ul>","Erskine Oglesby": "<ul><li> Affordable Housing Strategy </li> <li> Enhance Land Bank Concept </li> <li> Create strategies that address blight and decay in communities</li> <li> Create more programmable outdoor open spaces in undeserved neighborhoods</li> <li> Strengthen and provide support for Neighborhood Associations</li> <li> Expand homeless citizens initiatives to a regional collaboration</li></ul>","Tim Kelly": "<p>We have seen tremendous growth and success in Chattanooga over the past 20 years.  But some of our neighborhoods have been left behind and some just ignored. We must focus on making sure our neighborhoods have a great infrastructure and great quality of life.</p> <ul><li> Empower neighborhoods to reimagine how YFD centers should be used in their community, and increase investment in YFD centers. </li> <li> Revive our neighborhood parks and build a department dedicated to parks and the outdoors. </li> <li> Work with city planners, developers and other stakeholders to ensure broad access to housing for all.</li> <li> Expand grant opportunities for neighborhood associations and work with private partners to develop opportunities for public art and beautification investment in neighborhoods. </li> <li> Invest in neighborhoods, from playground equipment to sidewalks, to enhance the quality of life for all Chattanoogans.</li></ul>"};
+let economic_recovery_policies = {"Wade Hinton": "<ul><li>Support the ongoing health and financial needs of the essential workers on the frontlines</li> <li> Strengthen relationships with local, state, and federal leadership to guarantee Chattanooga’s share of recovery funds and ensure a more unified response to the pandemic.</li> <li> Provide resources and assist small businesses and nonprofits so that they are able to continue supporting our community </li> <li> Advocate for stronger, clearer regulations to protect the health of Chattanoogans and our economy.", "Erskine Oglesby": "<ul><li>Small Business Development, Support and Retention</li> <li>  Workforce and Career Development</li> <li> Re purpose city property and remove barriers for development</li> <li> Bring together public, private, and philanthropic to foster economic development in underserved communities </li> <li> Increase support for the Public Arts</li></ul>", "Chris Long": "<ul><li>My administration’s number one priority will be new job creation that will allow everyone to rise higher. Simply bringing in new relocated corporate industries has proven to be a disappointment to most in our city. We will provide the financial tools for small businesses to recover from the financial downturn that they have suffered, especially during the ongoing COVID-19 pandemic. Many huge corporations have literally thrived in our community through COVID-19 restrictions, tax abatements, and sweetheart deals. However, our small businesses have largely withered. By providing the economic climate and opportunity for small businesses, our citizens can once again get on the path to the American Dream. I believe that it is not the government’s job to provide the direct economic solution for everyone, but to set the economic climate and primer for everyone to succeed. New, good paying jobs are literally the economic engine of our city and will be the catalyst that everyone needs to provide the quality of life that we all desire. </li></ul>", "Kim White": "<ul><li>With a focus on small and medium sized businesses, at the outset of my administration I will create an Office of Small Business Support to assist those businesses in accessing available City or community resources, in navigating City government like permitting, and harnessing any and all funds for pandemic recovery. And while recruiting companies to Chattanooga is a key piece of the jobs puzzle along with strong partnerships with the Tennessee Department of Economic and Community Development, Hamilton County officials, and the Chamber of Commerce, we will also work with partners with UTC and Chattanooga State who are key in providing necessary education and training for Chattanoogans to access these jobs. With a renewed focus on job recruitment and workforce training, the key is to bring these services and the services of the Office of Small Business Support into neighborhoods and not behind the doors of City Hall.</li></ul>", "Tim Kelly": "<p>In order to recover, we must have a plan to get on the right track. Chattanooga has the potential to emerge stronger than ever from this pandemic, but it won’t happen without the right leadership. </p> <ul><li>  Immediately implement common-sense testing and tracing protocols to keep our economy open and thriving. </li> <li> Completely realign how City government operates and remove barriers so that all businesses in Chattanooga can access the resources they need to succeed and grow.  </li> <li> Realign the City budget to make sure dollars are invested in the areas that are most critical for expanding our economy and improving quality of life.  </li> <li> Invest in small and diverse businesses.  </li> <li> Invest in workforce development opportunities that make sense for all Chattanoogans. </li> <li> Incentivize workforce training to prepare our community for the next generation of jobs.  </li> <li> Mitigate reliance on the tourism economy by investing in homegrown entrepreneurship. </li> <li> Leverage our gigabit infrastructure and natural assets to recruit diverse businesses.  </li> <li> Implement a sustainable and livable wage for city employees. </li> </ul>"};
+let inclusive_city_policies = {"Wade Hinton": "<ul><li> Create an Office of Equity and Engagement that will embed inclusive practices across City departments and in the delivery of services to all Chattanoogans. </li> <li> Utilize performance data to identify racial, gender, and other disparities in City-led services and impact.</li> <li> Ensure the City models inclusion and diversity practices for all of Chattanooga by developing​ and supporting more inclusive ​practices across City departments from hiring, business support, contracting, community development and public safety.</li> <li> Create continuous opportunities for community organizations and residents to share their ideas and work together to build a stronger Chattanooga.</li> <li> Build a comprehensive talent strategy for Chattanooga: partner with employers, schools, and community organizations to create job training programs and apprenticeships in high-demand industries so all residents have clear pathways to good jobs. </li> <li> Lift up the City as a model for equitable workforce development and build talent pipelines that provide access for local students to access careers in local government </li> <li> Ensure Chattanooga continues to leverage its core assets—world-class outdoor amenities and low-cost, high-speed internet—to attract workers and employers in the post-COVID economy. </li> <li> Streamline the range of business services across Chattanooga, so everyone, from first-time entrepreneurs to long-time business owners, are able to quickly and easily access the support they need to grow their businesses.</li> <li> End discriminatory contracting processes and increase outreach and support, to engage more small businesses, especially minority and women-owned with the City.</li></ul>", "D'Angelo Davis": "<ul><li> We need to give small businesses including women and minority-owned small businesses access to the support they need to build, grow, and hire. Our plan will work to boost small businesses by easing worries to stay and grow the Chattanooga Market. Our plan will create a grant-based program that will work to provide 21st-century workforce incubators, mentoring, and training to entrepreneurs and small business owners in underserved communities across the City of Chattanooga. </li> <li> Creating an ultimate culture structure that is better tailored to 21st-century jobs increasing access for small businesses and start-ups, with a focus on minorities, women, and young entrepreneurs. </li> <li> Attracting and sustaining top talent from around the City of Chattanooga, and the world will create true diversity and inclusion that is lacking. Our plan creates a Science and Technology Research Development Department which its main purpose will be to ensure Chattanoogans are moving into the 21st century with 21st-century jobs in the global workforce. </li></ul>", "Tim Kelly": "<p>Unfortunately, there are still two Chattanoogas today. Tim Kelly is running for mayor to bridge that divide. This plan is a framework for mitigating racism and promoting equality for Black people in Chattanooga. The challenges facing Black Chattanoogans are complex, the legacy of centuries of structural racism, and so will require intentional and persistent solutions. As a city, we must invest in Black communities and work to merge our city into One Chattanooga.</p> <ul><li> ACKNOWLEDGING INEQUALITY: Race-neutral solutions will not resolve structural racism. </li> <li> BLACK UPWARD MOBILITY: Promote economic mobility to close income gaps and grow Black wealth in Chattanooga. </li> <li> RESPECT: Take an intentional approach at every level of government to treat all citizens with the respect they deserve, with solutions sourced from people, not politicians. </li> <li> CULTIVATING OPPORTUNITIES: Provide meaningful opportunities for early childhood education, job training, and entrepreneurship to cultivate a healthy Black middle class. </li> <li> TRANSPARENT GOVERNMENT: Promote two-way communication in every neighborhood, listening to (and not patronizing) the concerns of all. </li></ul> <p>MORE at: https://www.kellyforcha.com/blog/a-better-way-forward</p>", "Christopher Dahl": "<ul><li>End the censorship, end the suppression of community rights to participate in Government.</li> <li> Ensure the city is abiding by the American Disability Act and the Equal Employment Opportunity Act.</li> <li> Follow the Title VI guidelines as well. </li></ul>"};
+let public_transportation_policies = {"Tim Kelly": "<p>Chattanooga’s next chapter will require a fresh look at its strategic approach to transportation for all residents. From bus routes to sidewalks, Chattanoogans need a city government that brings experience and expertise to bear on transit infrastructure. As mayor, Tim Kelly will fight to ensure that Chattanooga follows best practices and pioneers innovative approaches to improve access to employment opportunities, city services and entertainment options for all city residents and visitors.</p> <ul><li>RELIABILITY: Residents who depend on public transportation need it to be timely and frequent to access jobs and other needed resources. </li> <li> ACCESSIBILITY: The city’s public transportation network can provide more utility by offering more routes to more places with greater frequency, and be easier to access.  </li> <li> AFFORDABILITY: The City must eliminate cost barriers for residents. </li> <li> FLEXIBILITY: Public transportation must have flexibility to adapt in real time as demand changes. </li> <li> TECHNOLOGY: Chattanooga will continue to be at the forefront of vehicle electrification and will continue to implement technology to improve transit. </li></ul> <p>MORE: https://www.kellyforcha.com/blog/public-transportation-vision-2021</p>"};
+let streets_policies = {"Wade Hinton": "<ul><li> Increase funding for paving and technology to ensure our streets and sidewalks reflect the pride we have in our communities.</li></ul>", "Kim White": "<ul><li>Chattanooga has over 2,300 miles of streets and roads, and they have not been maintained well. In my first budget, there will be an additional $3 million dollars for paving. Paving projects will be based on the greatest needs throughout our city identified by working with City Council along with creating a paving plan so Chattanoogans know where, when, and why these projects are occurring. </li></ul>", "Tim Kelly": "<p> The condition of our roads is unacceptable and we must stop neglecting them. We also have a parking problem in Chattanooga, and public transportation is not functioning like it should. Transportation and parking problems touch every Chattanoogan, and Chattanooga deserves a Mayor who will resolve these issues and stop kicking the can down the road. </p> <ul><li> Immediately realign the budget to ensure that we pave more roads in the Summer of 2021 than we have in any Summer over the past 20 years. </li> <li> Fix potholes on every single street in Chattanooga and implement a more robust process for pothole monitoring and repair. </li> <li> Restart regular maintenance of our roads, including a paving schedule that ensures that our roads do not get this bad again. </li> <li> Utilize the city sticker for Chattanooga residents to permit free and/or reduced parking downtown and negotiate an annual pass for reduced parking rates for residents of Hamilton County and surrounding municipalities. </li> <li> Restructure parking enforcement, create true parking ambassadors, and implement the ParkMobile functionality that allows small businesses to pay for customer parking. </li> <li> Improve access to public transportation, including electric shuttles, and implement a strategic plan for CARTA that provides real transportation solutions across the city. </li> <li> Tackle our transportation grid as a whole and create a common-sense road system that works for everyone.</li></ul>", "Chrisopher Dahl": "<ul><li>I will create a feasible plan to address the paving and bring the roads up to Federal guidelines. </li></ul>", "Erskine Oglesby": "<ul><li>Develop 5 year comprehensive plan to address paving and infrastructure deficiencies</li></ul>"};
+let sustainability_policies = {"Tim Kelly": "<p>Chattanooga’s commitment to the principles of sustainability will be woven into every aspect of City governance in 2021 and beyond. This will be achieved by a Mayor who understands that sustainability is not just a government office, but an essential, integrated aspect of governance itself. </p><p>Our commitment to sustainability includes environmental quality, public health, economic vitality, cultural diversity, and conservation of our natural assets. The foundations of sustainability also apply to human dignity, economic fairness, and social diversity. </p><p> Centering around these five core principles, our sustainability platform will contribute to a prosperous community that is resilient, educated, and equitable for generations:</p> <ul><li>LOCALISM Localism should be our first guiding principle. Every aspect of keeping capital and resources locally makes our economy and ecology more sustainable. </li> <li> GOVERNANCE Government programs should include environmental, economic, and social sustainability criteria in all government decisions </li> <li> EMPLOYMENT Chattanooga should prioritize local employment as a basis for all environmental initiatives undertaken by the City </li> <li> EDUCATION All environmentally related initiatives undertaken by the City should include curricula & internship opportunities for students of all ages. </li> <li> JUSTICE City policy should always be just, fair, and intentional about providing opportunity to communities with the greatest needs. </li> </ul> <p>MORE at https://www.kellyforcha.com/blog/sustainability-vision-2021</p>", "Christopher Dahl": "<ul><li>Make sure the sewer fee is spent correctly. </li> <li> Ensure that the provisions of the consent decree are followed.</li></ul>", "Erskine Oglesby": "<ul><li> Increase green sustainability initiatives regarding recycling and land-field usage</li></ul>"};
+let salary_policies =  {"Wade Hinton": "<ul><li>Along with other City personnel, evaluate firefighter, police, and emergency services pay to guarantee the City remains competitive for retaining and recruiting high performing talent.</li></ul>"};
+let effective_government_policies = {"Kim White": "<ul><li>The machinery of government must provide policies that bring about action, make a difference, be responsive, transparent, and proactive. During my first 90 days, my administration will conduct a thorough review of City government alongside city employees with a goal of greater efficiency, effectiveness, and getting things done. We will also have a City government that reflects the diversity of our city, who listens to neighbors first, and that is focused on finding solutions and bringing people together.</li></ul>", "Christopher Dahl": "<ul><li>The first thing I would do is ensure the city charter is followed.</li> <li> Lead the city out of the EPA consent Decree. </li> <li>Fall into state and federal compliance and stop the abuse of Home Rule.</li> <li>Turn several departments into commission style and get rid of other departments and or merge them.</li></ul>"};
+let collaborative_government_policies = {"Christopher Dahl": "<ul><li>Change the speaking rules at city council meetings.</li> <li> Adopt an inclusive participatory budgeting model for municipalities. </li> <li> Set it up to air public meetings at all the rec centers.</li></ul>"};
+let transparent_government_policies = {"Christopher Dahl": "<ul><li>Create an office of Accountability that oversees the city's audit department. They would also look into other complaints like ethic violations.</li> <li> Ensure the city follows the open meetings act</li> <li>Repeals the speaking rules at the council meetings to follow constitutional and due process clause guidelines</li> <li>And falls within state law guidelines dealing with misinformation.  Tennessee code annotated 39-16-402 Official misconduct. </li> </ul>"};
+
+
+function create_topic_level_box(topic, candidate) {
+	newDiv = document.createElement("div");
+	newDiv.setAttribute("class", "topic-boxes");
+	name = prepare_text(candidate);
+	topic_name = prepare_text(topic);
+	newDiv.setAttribute("id", `${name}_${topic_name}`);
+}
+
+function add_topic_title(topic, candidate) {
+	subheader = document.createElement("h3");
+	text = document.createTextNode(`${candidate}'s policies on ${topic}`);
+	subheader.appendChild(text);
+	newDiv.appendChild(subheader, newDiv);
+}
+
+function add_main_text(policy_list, candidate) {
+	details = policy_list[candidate];
+	newDiv.insertAdjacentHTML('beforeend', details);
+}
+
+function create_candidate_level_box_if_needed(candidate) {
+	candidateDiv = document.getElementById(`${name}`);
+	if(!candidateDiv) {
+		candidateDiv = document.createElement("div");
+		//set class
+		candidateDiv.setAttribute("class", "candidate-boxes");
+		//set id
+		name = prepare_text(candidates[i]);
+		candidateDiv.setAttribute("id", `${name}`);
+		//add header
+		header = document.createElement("h2");
+		text = document.createTextNode(candidates[i]);
+		header.appendChild(text);
+		candidateDiv.appendChild(header, candidateDiv);
+				
+		//add to DOM
+		mainDiv = document.getElementById("main");
+		mainDiv.appendChild(candidateDiv, mainDiv);	
+	}
+}
+
+function add_topic(policy_list, topic) {
+	for (i = 0; i <candidates.length; i++) {
+		if (policy_list[candidates[i]]) {
+			create_topic_level_box(topic, candidates[i]);
+			add_topic_title(topic, candidates[i]);
+			add_main_text(policy_list, candidates[i]);
+			create_candidate_level_box_if_needed(candidates[i]);
+			candidateDiv.appendChild(newDiv, candidateDiv);	
+		}
+	}
+	switch_button_to_pushed(policy_list, topic);
+}
+
+function remove_topic(policy_list, topic) {	
+	for (i = 0; i <candidates.length; i++) {
+		if (policy_list[candidates[i]]) {
+		name = prepare_text(candidates[i]);
+		topic_name = prepare_text(topic);
+		let childElem = document.getElementById(`${name}_${topic_name}`);
+		candidateDiv = document.getElementById(`${name}`);
+		candidateDiv.removeChild(childElem);
+			// check for empty headers 
+			if(candidateDiv.innerText == candidates[i]) {
+				mainDiv = document.getElementById("main");
+				mainDiv.removeChild(candidateDiv);
+			}
+		}
+	}
+	switch_button_to_unpushed(policy_list, topic);
+}
+
+//react or redux
+
+function switch_button_to_pushed(policy_list, topic) {
+	console.log(policy_list);
+	console.log(`${policy_list}`);
+
+	var id = prepare_text(topic);
+	currentButton = document.getElementById(id);
+	newButton = document.createElement("button");
+	newButton.insertAdjacentHTML('beforeend', currentButton.innerHTML);
+	newButton.setAttribute("id", id); 
+	
+	newButton.setAttribute("style", "background-color: #D46A6A;"); 
+	var onclickmethod = `remove_topic(${policy_list}, ${topic})`
+	newButton.onclick = function(){remove_topic(policy_list, topic);};
+
+	var buttonsDiv = document.getElementById("buttons");
+	buttonsDiv.replaceChild(newButton, currentButton);
+}
+
+function switch_button_to_unpushed(policy_list, topic) {
+
+var id = prepare_text(topic);
+	currentButton = document.getElementById(id);
+	newButton = document.createElement("button");
+	newButton.insertAdjacentHTML('beforeend', currentButton.innerHTML);
+	newButton.setAttribute("id", id); 
+	
+	var onclickmethod = `add_topic(${policy_list}, ${topic});`
+	newButton.setAttribute("style", "background-color: #AA3939;");
+	newButton.onclick = function(){add_topic(policy_list, topic);};
+
+	var buttonsDiv = document.getElementById("buttons");
+	buttonsDiv.replaceChild(newButton, currentButton);
+
+}
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+function prepare_text(text) {
+	text = text.toLowerCase();
+	text = text.split(" ").join("_");
+	return text;
+}
+
+function unprepare_text(text) {
+	text = text.split("_").join(" ");
+	text = text.split(' ').map(capitalize).join(' ');
+	return text;
+}
+
+</script>
+
+</body>
+</html>
