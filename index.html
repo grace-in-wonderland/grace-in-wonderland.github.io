@@ -67,6 +67,14 @@ Under the Berke administration, about 5% of the budget went to support "Agencies
 
 <script>
 let candidates = ["Dr. Elenora Woods", "Robert C. Wilson", "Kim White", "Erskine Oglesby", "Andrew McClaren", "George Ryan Love", "Tim Kelly", "Wade Hinton", "Russell Gilbert", "D'Angelo Davis", "Chris Long", "Christopher Dahl",  "Lon Cartwright", "Monty Bell", "Monty Bruell"];
+//let candidates = [];
+
+for(let i = candidates.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * i);
+  const temp = candidates[i];
+  candidates[i] = candidates[j];
+  candidates[j] = temp;
+}
 
 let websites = {"Dr. Elenora Woods": "https://www.docwoods.org/", "Kim White": "https://www.kimwhiteformayor.com/issues", "Erskine Oglesby": "https://erskineoglesby.com/", "Andrew McClaren": "https://www.mclarenformayor.com/", "George Ryan Love": "https://www.facebook.com/Ryan-Love-for-Mayor-of-Chattanooga-897608357241059/", "Tim Kelly": "https://www.kellyforcha.com/", "Wade Hinton": "https://wadehinton.com/", "Russell Gilbert": "https://www.voterussellgilbert.com/", "D'Angelo Davis": "https://peoplescha.com/", "Chris Long": "https://www.chrislongformayor.com/", "Christopher Dahl": "https://sites.google.com/view/electchrisdahl/elect-chris-dahl",  "Monty Bruell": "https://montybruell.com/"}
 
@@ -166,9 +174,6 @@ function remove_topic(policy_list, topic) {
 }
 
 function switch_button_to_pushed(policy_list, topic) {
-	console.log(policy_list);
-	console.log(`${policy_list}`);
-
 	var id = prepare_text(topic);
 	currentButton = document.getElementById(id);
 	newButton = document.createElement("button");
