@@ -10,15 +10,9 @@
 </head>
 
 <body>
-<a class="skip-link" href='#header'>Skip to content</a>
-<ul class="navbar">
-  <li class="navbar-list-item"><a href="mayor_project.html">Voter's Guide by Issue</a></li>
-  <li class="navbar-list-item"><a href="definitions_of_mayor.html">What can the Mayor do?</a></li>
-
-</ul>
 
 <div class="center">
-	<h1 id="header"> Chattanooga Mayoral Election 2021 - Voter's Guide by Issue</h1>
+	<h1> Chattanooga Mayoral Election 2021 - Voter's Guide by Issue</h1>
 	<p> Election Day is Tuesday, March 2, 2021 for the City of Chattanooga Municipal Election. Polls will be open from 8am to 7pm Eastern on Election Day. Early Voting will begin February 10 and end on February 25, 2021. <a href="https://elect.hamiltontn.gov/" target="_blank">Learn more at the Hamilton County Election Commission website</a></p>
 	<div id="buttons">
 		<button id="public_safety" onclick="add_topic(public_safety_policies, 'Public Safety')"><img src="firefighter.svg" height="60"/><br> Police and Public Safety</button>
@@ -181,7 +175,7 @@ function switch_button_to_pushed(policy_list, topic) {
 	newButton.insertAdjacentHTML('beforeend', currentButton.innerHTML);
 	newButton.setAttribute("id", id); 
 	
-	newButton.setAttribute("style", "background-color: #D46A6A;"); 
+	newButton.setAttribute("style", "background-color: #147E14;"); 
 	var onclickmethod = `remove_topic(${policy_list}, ${topic})`
 	newButton.onclick = function(){remove_topic(policy_list, topic);};
 
@@ -198,7 +192,7 @@ var id = prepare_text(topic);
 	newButton.setAttribute("id", id); 
 	
 	var onclickmethod = `add_topic(${policy_list}, ${topic});`
-	newButton.setAttribute("style", "background-color: #AA3939;");
+	newButton.setAttribute("style", "background-color: #299B29;");
 	newButton.onclick = function(){add_topic(policy_list, topic);};
 
 	var buttonsDiv = document.getElementById("buttons");

@@ -10,7 +10,7 @@ i {	font-size: 60px; padding: 2px; }
 button {
 	width: 140px;
 	height: 140px;
-	background-color:#AA3939;
+	background-color:#299B29;
 	font-size: 14px;
 }
 
@@ -68,14 +68,20 @@ button {
 }
 
 .candidate-boxes {
-	border: 1px solid #d8d8d8;
-	background-color: #d8d8d8;
+	border: 1px solid #2B4A80;
+	background-color: #2B4A80;
 	margin-bottom: 5px;
 	margin-top: 5px;
 }
 
 .candidate-boxes h2 {
 	padding-left: 10px;
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+.candidate-boxes h2 a {
+	color: white;
 }
 
 a {
@@ -93,7 +99,7 @@ a:hover {
 }
 
 #footer {
-	background-color: #d8d8d8;
+	border-top: 3px solid #2B4A80;
 	margin-top: 50px;
 	width: 100%;
 	padding: 50px;
